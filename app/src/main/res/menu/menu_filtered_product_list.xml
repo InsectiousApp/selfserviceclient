@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.selfservice.codev.aaaselfservice.FilteredProductListActivity">
+
+    <item android:id="@+id/filteredproductlistactivity_actionbaricon_refresh" android:title="refresh"
+        android:icon="@mipmap/refreshingicon1"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/filteredproductlistactivity_actionbaricon_search" android:title="search"
+        android:icon="@mipmap/ic_search_white_48dp"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+</menu>

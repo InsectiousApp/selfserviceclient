@@ -1,0 +1,243 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bluelight"
+    tools:context="com.example.codev.assignment1.ViewSingleClientActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+
+            android:gravity="center"
+            />
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittextbackground"
+            android:hint="Choose a user name "
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ff2e2d2e"
+
+            android:id="@+id/createclientactivity_et_username"
+            android:textColorHint="#ff2e2d2e"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:gravity="center"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittextbackground"
+            android:hint="Enter your first name "
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ff2e2d2e"
+
+            android:id="@+id/createclientactivity_et_firstname"
+            android:textColorHint="#ff2e2d2e"
+            android:textSize="18sp" />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:gravity="center"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittextbackground"
+            android:hint="Enter your last name "
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ff2e2d2e"
+
+            android:id="@+id/createclientactivity_et_lastname"
+            android:textColorHint="#ff2e2d2e"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:gravity="center"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittextbackground"
+            android:hint="Enter your email-id "
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ff2e2d2e"
+
+            android:id="@+id/createclientactivity_et_emailid"
+            android:textColorHint="#ff2e2d2e"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:gravity="center"
+            />
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittextbackground"
+            android:hint="Enter your mobile no. "
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ff2e2d2e"
+            android:inputType="number"
+            android:id="@+id/createclientactivity_et_mobileno"
+            android:textColorHint="#ff2e2d2e"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+
+
+                android:layout_weight="0.2"
+
+                android:gravity="center"
+                />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/createclientactivity_cb_agreeterms"
+
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+
+                android:text="I agree to Upscale Term of service and privacy policy"
+                android:layout_weight="6"
+                android:textColor="#fff"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:gravity="center"
+            />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/createclientactivity_btn_register"
+            android:layout_height="40dp"
+
+            android:layout_width="200dp"
+
+
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="2dp"
+            fancy:fb_defaultColor="@color/bluelight"
+            fancy:fb_focusColor="@color/bluelightdark"
+            android:fontFamily="sans-serif-light"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="30dp"
+            android:gravity="center"
+            fancy:fb_text="Register"
+            fancy:fb_textColor="#FFFFFF"
+            android:layout_gravity="center" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+
+            android:gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

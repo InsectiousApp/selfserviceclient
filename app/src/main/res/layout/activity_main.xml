@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        >
+
+        <mehdi.sakout.fancybuttons.FancyButton
+
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="0dp"
+            fancy:fb_defaultColor="@color/bluelight"
+            fancy:fb_focusColor="@color/bluelightdark"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/btn_upload"
+            fancy:fb_iconPosition="top"
+            fancy:fb_radius="5dp"
+            android:gravity="center"
+            fancy:fb_text="Existing User"
+            fancy:fb_textSize="30sp"
+            fancy:fb_textColor="#FFFFFF"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        >
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_width="150dp"
+
+            fancy:fb_textSize="30sp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="0dp"
+            fancy:fb_defaultColor="@color/bluelight"
+            fancy:fb_focusColor="@color/bluelightdark"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/mainactivity_btn_newuser"
+            fancy:fb_iconPosition="top"
+            fancy:fb_radius="5dp"
+            android:gravity="center"
+            fancy:fb_text="New User"
+            fancy:fb_textColor="#FFFFFF"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AAA self service</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_create_client">CreateClientActivity</string>
+    <string name="title_activity_user_preference">UserPreferenceActivity</string>
+    <string name="title_activity_filtered_product_list">FilteredProductListActivity</string>
+</resources>
