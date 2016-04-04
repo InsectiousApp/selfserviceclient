@@ -1,0 +1,74 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#ff333333"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/orange2"
+            android:layout_gravity="center"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/activity_bike_loan_networkimageview_ivbikeimage"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/bikeimage1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/scrim_top"
+                app:layout_collapseMode="pin"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:layout_alignBottom="@+id/image"
+                android:background="@drawable/scrim_bottom"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <include layout="@layout/activity_bike_loan_bikedetail"/>
+            <include layout="@layout/activity_bike_loan_biketaxcost"/>
+            <include layout="@layout/activity_bike_loan_bikepayment"/>
+            <include layout="@layout/activity_bike_loan_bikeloanapply"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -4,19 +4,18 @@
 
     android:layout_width="match_parent"
     android:gravity="center"
-     android:paddingRight="5dp"
-    android:paddingLeft="5dp"
+
     android:orientation="vertical"
-    android:layout_height="160dp">
+    android:layout_height="250dp">
 
     <android.support.v7.widget.CardView
         android:layout_width="fill_parent"
         android:layout_gravity="center"
-        android:layout_height="155dp"
+        android:layout_height="248dp"
         card_view:cardUseCompatPadding="true"
         android:translationZ="2dp"
-        card_view:cardCornerRadius="2dp"
-        card_view:cardElevation="3dp"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="2dp"
         >
 
 
@@ -26,133 +25,34 @@
        android:orientation="vertical"
        >
 
-       <LinearLayout
+       <FrameLayout
            android:layout_width="fill_parent"
-           android:layout_height="0dp"
-           android:layout_weight="1"
-           android:orientation="horizontal"
+           android:layout_height="fill_parent"
            >
 
+           <com.android.volley.toolbox.NetworkImageView
+               android:id="@+id/filteredproductlistactivity_networkimageview_iv"
+               android:adjustViewBounds="true"
+               android:scaleType="fitCenter"
+               android:src="@mipmap/bikeimage1"
+               android:layout_width="wrap_content"
+
+               android:layout_height="fill_parent"/>
+
            <TextView
-               android:layout_width="0dp"
-               android:layout_height="fill_parent"
-               android:layout_weight="2.5"
-               android:background="@color/bluelight"
-               android:fontFamily="sans-serif-light"
-               android:textColor="#fff"
-               android:text="Pulsar"
-               android:gravity="center_vertical|left"
-               android:paddingLeft="20dp"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp"
+               android:background="#99000000"
                android:id="@+id/filteredproductlistactivity_tv_name"
-               android:textSize="18sp"
-               />
-
-           <TextView
-               android:layout_width="0dp"
-               android:layout_height="fill_parent"
-               android:layout_weight="1"
-               android:background="#ff2e2d2e"
+               android:text="Bajaj Pulsar"
+               android:textSize="20sp"
                android:textColor="#fff"
-               android:text="Rs 75000/-"
                android:gravity="center"
-               android:id="@+id/filteredproductlistactivity_tv_price"
-               android:textSize="16sp"
+               android:fontFamily="sans-serif-light"
+               android:layout_gravity="bottom"
                />
 
-
-       </LinearLayout>
-
-       <LinearLayout
-           android:layout_width="fill_parent"
-           android:layout_height="0dp"
-           android:layout_weight="3"
-           android:orientation="horizontal"
-           >
-
-        <ImageView
-             android:layout_width="0dp"
-             android:layout_weight="1"
-            android:padding="10dp"
-            android:id="@+id/bikelist_image"
-            android:src="@mipmap/ic_launcher"
-             android:layout_height="fill_parent"
-            />
-
-           <LinearLayout
-               android:layout_width="0dp"
-               android:layout_height="fill_parent"
-               android:layout_weight="1"
-               android:orientation="vertical"
-               >
-
-               <LinearLayout
-                   android:layout_width="fill_parent"
-                   android:layout_height="0dp"
-                   android:layout_weight="1"
-                   android:orientation="horizontal"
-                   >
-
-                   <TextView
-                       android:layout_width="0dp"
-                       android:layout_height="fill_parent"
-                       android:layout_weight="1"
-                       android:fontFamily="sans-serif-light"
-                       android:textColor="#ff2e2d2e"
-                       android:text="Milage:"
-                       android:gravity="center_vertical|right"
-                       android:paddingRight="5dp"
-                       android:textSize="15sp"
-                       />
-
-                   <TextView
-                       android:layout_width="0dp"
-                       android:layout_height="fill_parent"
-                       android:layout_weight="1"
-                       android:textColor="#ff2e2d2e"
-                       android:text="85kmpl"
-                       android:id="@+id/filteredproductlistactivity_tv_milage"
-                       android:gravity="center_vertical|left"
-                       android:paddingLeft="5dp"
-                       android:textSize="15sp"
-                       />
-
-               </LinearLayout>
-
-               <LinearLayout
-                   android:layout_width="fill_parent"
-                   android:layout_height="0dp"
-                   android:layout_weight="1"
-                   android:orientation="horizontal"
-                   >
-
-                   <TextView
-                       android:layout_width="0dp"
-                       android:layout_height="fill_parent"
-                       android:layout_weight="1"
-                       android:fontFamily="sans-serif-light"
-                       android:textColor="#ff2e2d2e"
-                       android:text="Style:"
-                       android:gravity="center_vertical|right"
-                       android:paddingRight="5dp"
-                       android:textSize="15sp"
-                       />
-
-                   <TextView
-                       android:layout_width="0dp"
-                       android:layout_height="fill_parent"
-                       android:layout_weight="1"
-                       android:textColor="#ff2e2d2e"
-                       android:id="@+id/filteredproductlistactivity_tv_style"
-                       android:text="scooter"
-                       android:gravity="center_vertical|left"
-                       android:paddingLeft="5dp"
-                       android:textSize="15sp"
-                       />
-               </LinearLayout>
-
-           </LinearLayout>
-
-       </LinearLayout>
+       </FrameLayout>
 
 
 

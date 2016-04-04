@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/grey1"
+
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="0.5"
+    />
+
+    <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:layout_weight="1.5"
+    android:orientation="vertical"
+    >
+
+        <View
+            android:layout_width="2dp"
+            android:layout_gravity="center"
+            android:layout_height="20dp"
+            android:background="#fff" />
+
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle1"
+            >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@mipmap/bikeicon1"
+                android:padding="10dp"
+                />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_gravity="center"
+            android:layout_height="20dp"
+            android:background="#fff" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:textColor="#fff"
+        android:text="Vehicle Details"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:textSize="22sp"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/orange2"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:longClickable="true"
+            android:id="@+id/lenddda">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:text="Mileage:"
+                android:fontFamily="sans-serif-bold"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:text="50kmpl"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical|left"
+                android:textSize="16sp"
+                android:id="@+id/activity_bike_loan_bikedetail_mileage" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:text="Brand:"
+                android:fontFamily="sans-serif-bold"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:text="Yamaha"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical|left"
+                android:textSize="16sp"
+                android:id="@+id/activity_bike_loan_bikedetail_brand" />
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:text="The Bajaj Pulsar 150 was one of the first models that gave customers a taste of performance motorcycling in India. Power comes from a robust 4-stroke, 149cc air cooled engine producing 14.7 bhp and 12.5 Nm of torque. The bike is priced competitively at Rs. 71,756 (ex-showroom, Delhi). The price coupled with a mileage of 65 kmpl brings performance motorcycling to a wider audience. The bike is equipped with alloy wheels, front disc brake, analogue-digital combo console and electric start. With constant updates to stay in tune with changing technologies, the Pulsar makes a strong case for itself. The bike is available in four colours"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:id="@+id/activity_bike_loan_bikedetail_description" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

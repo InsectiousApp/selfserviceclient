@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/grey1"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:textColor="#fff"
+            android:text="Tax and Other Costs"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textSize="22sp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:layout_width="2dp"
+                android:layout_gravity="center"
+                android:layout_height="20dp"
+                android:background="#fff" />
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle1"
+                >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@mipmap/taxcost"
+                    android:padding="10dp"
+                    />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_gravity="center"
+                android:layout_height="20dp"
+                android:background="#fff" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/grey2"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="Base Price:"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="-"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:id="@+id/activity_bike_loan_biketaxcost_baseprice_amount" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="53,400/-"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:id="@+id/activity_bike_loan_biketaxcost_baseprice_final" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="VAT:"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="12.5%"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:id="@+id/activity_bike_loan_biketaxcost_vat_amount" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="2,500/-"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:id="@+id/activity_bike_loan_biketaxcost_vat_final" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="ST:"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="6.4%"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:id="@+id/activity_bike_loan_biketaxcost_st_amount" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="780/-"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:id="@+id/activity_bike_loan_biketaxcost_st_final" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="RTO:"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="4,300/-"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:id="@+id/activity_bike_loan_biketaxcost_rto_amount" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="4,300/-"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:id="@+id/activity_bike_loan_biketaxcost_rto_final" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="Others:"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="5dp"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="1250/-"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:id="@+id/activity_bike_loan_biketaxcost_others_amount" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="1250/-"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:id="@+id/activity_bike_loan_biketaxcost_others_final" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_gravity="center"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#fff" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="Total:"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="5dp"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="Rs."
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="59,600/-"
+                    android:fontFamily="sans-serif-bold"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:id="@+id/activity_bike_loan_biketaxcost_total_final" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

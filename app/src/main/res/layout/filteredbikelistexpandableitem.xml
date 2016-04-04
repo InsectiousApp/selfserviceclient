@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bluelight"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp">
+
+
+
+        <LinearLayout
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#fff"
+                android:text="Base Price/ Emi"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:text="54,300/-"
+                android:id="@+id/filteredproductlistactivity_tv_price"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#fff"
+                android:text="Style:"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:id="@+id/filteredproductlistactivity_tv_style"
+                android:text="scooter"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#fff"
+                android:text="Milage:"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:text="85kmpl"
+                android:id="@+id/filteredproductlistactivity_tv_milage"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#fff"
+                android:text="Make:"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:id="@+id/filteredproductlistactivity_tv_brand"
+                android:text="Honda"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="2dp"
+        fancy:fb_defaultColor="@color/bluelight"
+        fancy:fb_focusColor="@color/bluelightdark"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/filteredproductlistactivity_btn_moredetails"
+        fancy:fb_iconPosition="top"
+        fancy:fb_radius="2dp"
+        android:gravity="center"
+        fancy:fb_text="More Details"
+        fancy:fb_textSize="20sp"
+        fancy:fb_textColor="#FFFFFF"
+        android:layout_gravity="center" />
+
+</LinearLayout>
