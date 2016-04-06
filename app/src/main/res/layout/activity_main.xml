@@ -3,9 +3,9 @@
     xmlns:lib="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
     xmlns:fancy="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@color/grey1"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,25 +14,33 @@
         android:layout_weight="0.3"
         />
 
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/activity_main_framelayout"
+        android:layout_weight="2"
+        >
+
     <LinearLayout
         android:layout_width="300dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/llcontainingbuttons"
         android:layout_gravity="center"
         >
 
         <mehdi.sakout.fancybuttons.FancyButton
 
-            android:layout_height="150dp"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:layout_width="100dp"
+            android:layout_width="fill_parent"
 
             fancy:fb_borderColor="#FFFFFF"
             fancy:fb_borderWidth="0dp"
             fancy:fb_defaultColor="@color/bluelight"
             fancy:fb_focusColor="@color/bluelightdark"
+            android:id="@+id/mainactivity_btn_existinguser"
             android:fontFamily="sans-serif-light"
-            android:id="@+id/btn_upload"
             fancy:fb_iconPosition="top"
             fancy:fb_radius="5dp"
             android:gravity="center"
@@ -42,22 +50,18 @@
             android:layout_gravity="center" />
 
 
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_gravity="center"
-        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            />
 
 
         <mehdi.sakout.fancybuttons.FancyButton
 
-            android:layout_height="150dp"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:layout_width="150dp"
+            android:layout_width="fill_parent"
 
             fancy:fb_textSize="30sp"
             fancy:fb_borderColor="#FFFFFF"
@@ -74,6 +78,8 @@
             android:layout_gravity="center" />
 
     </LinearLayout>
+
+    </FrameLayout>
 
     <TextView
         android:layout_width="fill_parent"

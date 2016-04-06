@@ -1,31 +1,40 @@
 package com.selfservice.codev.aaaselfservice;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 
-import com.selfservice.codev.aaaselfservice.Bike.FilteredProductListActivity;
+import com.selfservice.codev.aaaselfservice.Fragments.AadharCardVerificationFragment;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-   FancyButton btnSignUp;
+   FancyButton btnNewUser, btnExistingUser;
+    AadharCardVerificationFragment aadharCardFragment;
+    LinearLayout llButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         getSupportActionBar().setTitle("Choose an option");
-
-        btnSignUp=(FancyButton)findViewById(R.id.mainactivity_btn_newuser);
-        btnSignUp.setOnClickListener(this);
-
-
+        aadharCardFragment=new AadharCardVerificationFragment();
+        linkalltheviews();
     }
+
+    private void linkalltheviews() {
+        btnNewUser=(FancyButton)findViewById(R.id.mainactivity_btn_newuser);
+        btnExistingUser=(FancyButton)findViewById(R.id.mainactivity_btn_existinguser);
+        llButton=(LinearLayout)findViewById(R.id.llcontainingbuttons);
+        btnNewUser.setOnClickListener(this);
+        btnExistingUser.setOnClickListener(this);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -56,12 +65,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             case R.id.mainactivity_btn_newuser:
 
-                Intent i = new Intent(MainActivity.this, FilteredProductListActivity.class);
-                startActivity(i);
-                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+                if(llButton.getVisibility()==View.VISIBLE) {
+                    llButton.setVisibility(View.GONE);
+                    getSupportFragmentManager().beginTransaction().replace(R.id.activity_main_framelayout, aadharCardFragment).commit();
+                }
 
                 break;
 
+            case R.id.mainactivity_btn_existinguser:
+
+
+                break;
+
+        }
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(llButton.getVisibility()==View.VISIBLE) {
+            super.onBackPressed();
+        }
+        else
+        {
+            getSupportFragmentManager().beginTransaction().
+                    remove(getSupportFragmentManager().findFragmentById(R.id.activity_main_framelayout)).commit();
+            llButton.setVisibility(View.VISIBLE);
         }
 
     }

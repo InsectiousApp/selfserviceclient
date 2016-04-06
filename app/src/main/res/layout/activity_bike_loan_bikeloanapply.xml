@@ -88,6 +88,7 @@
             android:background="@color/teal2"
             android:textColor="#fff"
             android:text="Apply for loan"
+            android:id="@+id/activity_bike_loan_bikeloanapply_applyforloan"
             android:fontFamily="sans-serif-bold"
             android:gravity="center"
             android:padding="30dp"

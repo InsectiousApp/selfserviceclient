@@ -17,11 +17,7 @@
             android:name=".SplashActivity"
             android:label="AAA self service"
             android:theme="@style/AppTheme2" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".CreateClientActivity"
@@ -38,9 +34,17 @@
         </activity>
         <activity
             android:name=".Bike.BikeLoanActivity"
-            android:theme="@style/GreyTheme1"
-            android:label="@string/title_activity_bike_loan" >
+            android:label="@string/title_activity_bike_loan"
+            android:theme="@style/GreyTheme1" >
+        </activity>
+        <activity
+            android:name=".Login.LoginandSignUpActivity"
+            android:label="@string/title_activity_loginand_sign_up" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

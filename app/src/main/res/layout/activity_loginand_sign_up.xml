@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bikeimage2"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.selfservice.codev.aaaselfservice.Login.LoginandSignUpActivity">
+
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8"
+    android:id="@+id/activity_loginand_sign_up_framelayout_fragment"
+    >
+
+</FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        />
+
+ <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="0dp"
+     android:layout_weight="1"
+     android:orientation="horizontal"
+     >
+
+     <TextView
+         android:layout_width="0dp"
+         android:layout_height="fill_parent"
+         android:layout_weight="0.2"
+         />
+
+     <mehdi.sakout.fancybuttons.FancyButton
+
+         android:layout_height="fill_parent"
+         android:layout_weight="1"
+         android:layout_width="0dp"
+
+         fancy:fb_borderColor="#FFFFFF"
+         fancy:fb_borderWidth="1dp"
+         fancy:fb_defaultColor="@color/grey1"
+         fancy:fb_focusColor="@color/grey1"
+         android:id="@+id/activity_loginand_sign_up_btn_login"
+         android:fontFamily="sans-serif-light"
+         fancy:fb_iconPosition="top"
+         fancy:fb_radius="5dp"
+         android:gravity="center"
+         fancy:fb_text="Login"
+         fancy:fb_textSize="22sp"
+         fancy:fb_textColor="#FFFFFF"
+         android:layout_gravity="center" />
+
+     <TextView
+         android:layout_width="0dp"
+         android:layout_height="fill_parent"
+         android:layout_weight="0.2"
+         />
+
+     <mehdi.sakout.fancybuttons.FancyButton
+
+         android:layout_height="fill_parent"
+         android:layout_weight="1"
+         android:layout_width="0dp"
+
+         fancy:fb_borderColor="#FFFFFF"
+         fancy:fb_borderWidth="1dp"
+         fancy:fb_defaultColor="@color/grey1"
+         fancy:fb_focusColor="@color/grey1"
+         android:id="@+id/activity_loginand_sign_up_btn_signup"
+         android:fontFamily="sans-serif-light"
+         fancy:fb_iconPosition="top"
+         fancy:fb_radius="5dp"
+         android:gravity="center"
+         fancy:fb_text="Sign Up"
+         fancy:fb_textSize="22sp"
+         fancy:fb_textColor="#FFFFFF"
+         android:layout_gravity="center" />
+
+     <TextView
+         android:layout_width="0dp"
+         android:layout_height="fill_parent"
+         android:layout_weight="0.2"
+         />
+
+ </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        />
+
+</LinearLayout>

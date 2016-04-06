@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:padding="15dp"
+    android:background="@drawable/viewbackground1"
+    tools:context="com.selfservice.codev.aaaselfservice.Fragments.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        />
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:text="Enter user name"
+       android:gravity="center_vertical"
+       android:textColor="#fff"
+       android:paddingLeft="10dp"
+       android:textSize="20dp"
+       android:fontFamily="sans-serif-light"
+       />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/grey1"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/edittextbackground"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Enter user name"
+        android:gravity="center_vertical"
+        android:textColor="#fff"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:textColor="@color/grey1"
+        android:gravity="center_vertical"
+        android:background="@drawable/edittextbackground"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey1"
+    android:gravity="center"
+    tools:context="com.example.codev.assignment1.URLSettingsActivity">
+
+
+
+
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/aadharcardicon1"
+             />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#fff"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:background="@color/grey1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:maxLength="12"
+                    android:background="@drawable/edittextbackground2"
+                    android:hint="Enter your aadharcard number"
+                    android:fontFamily="sans-serif-light"
+                    android:inputType="number"
+                    android:textColor="#fff"
+                    android:id="@+id/fragment_aadhar_card_verification_et_aadharcardnumber"
+                    android:textColorHint="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+
+                    />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/fragment_aadhar_card_verification_btn_verify"
+                    android:layout_width="170dp"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="0.6"
+                    fancy:fb_borderColor="#FFFFFF"
+                    fancy:fb_borderWidth="0dp"
+                    fancy:fb_defaultColor="@color/bluelight"
+                    fancy:fb_focusColor="@color/bluelightdark"
+                    android:fontFamily="sans-serif-light"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="30dp"
+                    android:gravity="center"
+                    fancy:fb_text="Verify"
+                    fancy:fb_textColor="#FFFFFF"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+
+                    />
+
+</LinearLayout>
+
+
+</LinearLayout>

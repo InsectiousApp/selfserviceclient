@@ -10,10 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
+import com.selfservice.codev.aaaselfservice.Login.LoginandSignUpActivity;
 import com.selfservice.codev.aaaselfservice.Models.BikeItem;
 import com.selfservice.codev.aaaselfservice.R;
 import com.selfservice.codev.aaaselfservice.Volley.CustomVolleyRequest;
@@ -24,6 +26,7 @@ public class BikeLoanActivity extends AppCompatActivity {
 
     TextView tvMilage, tvBrand, tvDescription;
     TextView tvBasePrice, tvVatAmount, tvVatFinal, tvSTAmount, tvSTFinal, tvRTOAmount, tvRTOFinal, tvOCAmount, tvOCFinal, tvTotalFinal;
+    TextView tvApplyforLoan;
     BikeItem b1;
     int ibasePrice, irto, iothers, itotal;
     Float fvat, fst;
@@ -79,6 +82,16 @@ public class BikeLoanActivity extends AppCompatActivity {
         tvTotalFinal=(TextView)findViewById(R.id.activity_bike_loan_biketaxcost_total_final);
 
         imageView = (NetworkImageView)findViewById(R.id.activity_bike_loan_networkimageview_ivbikeimage);
+
+        tvApplyforLoan=(TextView)findViewById(R.id.activity_bike_loan_bikeloanapply_applyforloan);
+        tvApplyforLoan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    Intent i=new Intent();
+                    i.setClass(getApplicationContext(), LoginandSignUpActivity.class);
+                    startActivity(i);
+            }
+        });
     }
 
     private void calculateAllTaxes() {
